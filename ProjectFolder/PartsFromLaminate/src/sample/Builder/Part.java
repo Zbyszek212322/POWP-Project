@@ -1,6 +1,6 @@
 package sample.Builder;
 
-public class Parts {
+public class Part {
 
     private String kształt;
     private String otwory;
