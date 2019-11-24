@@ -1,2 +1,2 @@
-.src/PartsFromLaminate/out*
-.idea*
+.idea
+.src/PartsFromLaminate/out/*
