@@ -2,18 +2,18 @@ package sample.Builder;
 
 public class Part {
 
-    private String kształt;
+    private String rozmiar;
     private String otwory;
     private String taśmaKlejąca;
     private String etykieta;
     private String opakowanie;
 
     public String getKształt() {
-        return kształt;
+        return rozmiar;
     }
 
     public void setKształt(String kształt) {
-        this.kształt = kształt;
+        this.rozmiar = kształt;
     }
 
     public String getOtwory() {
@@ -48,14 +48,14 @@ public class Part {
         this.opakowanie = opakowanie;
     }
 
+    @Override
     public String toString() {
-
-        return "Część z laminatu {" +
-                " kształt: " + kształt +
-                " otwory: " + otwory +
-                " taśmaKlejąca: " + taśmaKlejąca +
-                " etykieta: " + etykieta +
-                " opakowanie: " + opakowanie +
-                "}";
+        return "Kształtka z laminatu {" +
+                "rozmiar='" + rozmiar + '\'' +
+                ", otwory='" + otwory + '\'' +
+                ", taśma klejąca='" + taśmaKlejąca + '\'' +
+                ", etykieta='" + etykieta + '\'' +
+                ", opakowanie='" + opakowanie + '\'' +
+                '}';
     }
 }
