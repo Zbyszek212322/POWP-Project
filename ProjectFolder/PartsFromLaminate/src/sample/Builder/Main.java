@@ -7,6 +7,7 @@ public class Main {
         // mała część
 
         SmallSizePartBuilder smallSizePartBuilder = new SmallSizePartBuilder();
+
         PartDirector smallSizePartDirector = new PartDirector(smallSizePartBuilder);
         smallSizePartDirector.buildPart();
         Part smallPart = smallSizePartDirector.getPart();
@@ -15,6 +16,7 @@ public class Main {
         // średnia część
 
         MediumSizePartBuilder mediumSizePartBuilder = new MediumSizePartBuilder();
+
         PartDirector mediumSizePartDirector = new PartDirector(mediumSizePartBuilder);
         mediumSizePartDirector.buildPart();
         Part mediumPart = mediumSizePartDirector.getPart();
@@ -23,10 +25,18 @@ public class Main {
         // duża część
 
         BigSizePartBuilder bigSizePartBuilder = new BigSizePartBuilder();
+
         PartDirector bigSizePartDirector = new PartDirector(bigSizePartBuilder);
         bigSizePartDirector.buildPart();
         Part bigPart = bigSizePartDirector.getPart();
         System.out.println(bigPart);
+
+        // uniwersalny Director robi wybraną część
+
+        PartDirector partDirector = new PartDirector(bigSizePartBuilder);
+        partDirector.buildPart();
+        Part part = partDirector.getPart();
+        System.out.println(part);
 
     }
 }
