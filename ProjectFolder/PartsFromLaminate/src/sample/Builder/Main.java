@@ -1,5 +1,10 @@
 package sample.Builder;
 
+import sample.Decorator.DecoratorAddFoil;
+import sample.Decorator.DecoratorPrintNumber;
+import sample.Decorator.DecoratorTrimEdges;
+import sample.Decorator.PartDecorator;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -36,7 +41,9 @@ public class Main {
         PartDirector partDirector = new PartDirector(bigSizePartBuilder);
         partDirector.buildPart();
         Part part = partDirector.getPart();
-        System.out.println(part);
 
+        //new DecoratorTrimEdges(new PartDecorator(part));
+        //new DecoratorPrintNumber(new DecoratorTrimEdges(new PartDecorator(part)));
+        new DecoratorAddFoil(new DecoratorPrintNumber(new DecoratorTrimEdges(new PartDecorator(part))));
     }
 }
