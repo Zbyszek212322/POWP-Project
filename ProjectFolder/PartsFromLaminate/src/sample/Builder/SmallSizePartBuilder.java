@@ -9,23 +9,23 @@ public class SmallSizePartBuilder implements PartBuilder{
     }
 
     public void buildShape() {
-        this.part.setKształt("mały rozmiar kształtki");
+        this.part.setKształt("small");
     }
 
     public void buildHoles() {
-        this.part.setOtwory("mała średnica otworów");
+        this.part.setOtwory("small diameter");
     }
 
     public void buildAdhesiveTape() {
-        this.part.setTaśmaKlejąca("wąska taśma klejąca");
+        this.part.setTaśmaKlejąca("narrow");
     }
 
     public void buildLabel() {
-        this.part.setEtykieta("mały rozmiar etykiety");
+        this.part.setEtykieta("small");
     }
 
     public void buildPackaging() {
-        this.part.setOpakowanie("małe pudełko");
+        this.part.setOpakowanie("small box");
     }
 
     public Part getPart() {

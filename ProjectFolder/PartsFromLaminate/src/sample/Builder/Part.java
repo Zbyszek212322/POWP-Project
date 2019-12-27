@@ -50,12 +50,11 @@ public class Part {
 
     @Override
     public String toString() {
-        return "Kształtka z laminatu {" +
-                "rozmiar='" + rozmiar + '\'' +
-                ", otwory='" + otwory + '\'' +
-                ", taśma klejąca='" + taśmaKlejąca + '\'' +
-                ", etykieta='" + etykieta + '\'' +
-                ", opakowanie='" + opakowanie + '\'' +
-                '}';
+        return "\nPart from laminate: " +
+                "dimensions='" + rozmiar + '\'' +
+                ", holes='" + otwory + '\'' +
+                ", adhesive tape='" + taśmaKlejąca + '\'' +
+                ", label='" + etykieta + '\'' +
+                ", packaging='" + opakowanie + '\'';
     }
 }

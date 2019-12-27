@@ -9,23 +9,23 @@ public class BigSizePartBuilder implements PartBuilder {
     }
 
     public void buildShape() {
-        this.part.setKształt("duży rozmiar kształtki");
+        this.part.setKształt("big");
     }
 
     public void buildHoles() {
-        this.part.setOtwory("duża średnica otworów");
+        this.part.setOtwory("big diameter");
     }
 
     public void buildAdhesiveTape() {
-        this.part.setTaśmaKlejąca("szeroka taśma klejąca");
+        this.part.setTaśmaKlejąca("wide");
     }
 
     public void buildLabel() {
-        this.part.setEtykieta("duży rozmiar etykiety");
+        this.part.setEtykieta("big");
     }
 
     public void buildPackaging() {
-        this.part.setOpakowanie("duże pudełko");
+        this.part.setOpakowanie("big box");
     }
 
     public Part getPart() {

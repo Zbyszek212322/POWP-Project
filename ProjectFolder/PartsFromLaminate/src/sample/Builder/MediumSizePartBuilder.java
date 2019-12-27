@@ -9,23 +9,23 @@ public class MediumSizePartBuilder implements PartBuilder {
     }
 
     public void buildShape() {
-        this.part.setKształt("średni rozmiar kształtki");
+        this.part.setKształt("medium");
     }
 
     public void buildHoles() {
-        this.part.setOtwory("standardowa średnica otworów");
+        this.part.setOtwory("standard diameter");
     }
 
     public void buildAdhesiveTape() {
-        this.part.setTaśmaKlejąca("standardowa taśma klejąca");
+        this.part.setTaśmaKlejąca("standard");
     }
 
     public void buildLabel() {
-        this.part.setEtykieta("standardowa etykieta");
+        this.part.setEtykieta("standard");
     }
 
     public void buildPackaging() {
-        this.part.setOpakowanie("standardowe pudełko");
+        this.part.setOpakowanie("standard box");
     }
 
     public Part getPart() {
