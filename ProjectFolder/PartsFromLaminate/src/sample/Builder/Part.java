@@ -50,7 +50,7 @@ public class Part {
 
     @Override
     public String toString() {
-        return "\nPart from laminate: " +
+        return "\nPart from laminate:\n" +
                 "dimensions='" + rozmiar + '\'' +
                 ", holes='" + otwory + '\'' +
                 ", adhesive tape='" + taśmaKlejąca + '\'' +
