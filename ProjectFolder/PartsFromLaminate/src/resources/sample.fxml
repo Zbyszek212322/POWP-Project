@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="6.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MVVM.PartsView">
+    <children>
+        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="3.0">
+            <children>
+                <Label contentDisplay="TOP" text="Builder: part from laminate">
+                    <font>
+                        <Font size="18.0" />
+                    </font></Label>
+                <RadioButton fx:id="radioButtonSmall" mnemonicParsing="false" selected="true" text="small">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="BuilderGroup" />
+                    </toggleGroup></RadioButton>
+                <RadioButton fx:id="radioButtonMedium" mnemonicParsing="false" text="medium" toggleGroup="$BuilderGroup">
+                    <font>
+                        <Font size="14.0" />
+                    </font></RadioButton>
+                <RadioButton fx:id="radioButtonBig" mnemonicParsing="false" text="big" toggleGroup="$BuilderGroup">
+                    <font>
+                        <Font size="14.0" />
+                    </font></RadioButton>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="3.0">
+            <children>
+                <Label text="Decorator: decorate part">
+                    <font>
+                        <Font size="18.0" />
+                    </font></Label>
+                <CheckBox fx:id="checkBoxEdges" mnemonicParsing="false" text="trimmed edges">
+                    <font>
+                        <Font size="14.0" />
+                    </font></CheckBox>
+                <CheckBox fx:id="checkBoxNumber" mnemonicParsing="false" text="printed number">
+                    <font>
+                        <Font size="14.0" />
+                    </font></CheckBox>
+                <CheckBox fx:id="checkBoxFoil" mnemonicParsing="false" text="packed in foil bag">
+                    <font>
+                        <Font size="14.0" />
+                    </font></CheckBox>
+            </children>
+        </VBox>
+        <VBox prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <Separator prefWidth="200.0" />
+                <Label fx:id="labelText" wrapText="true" />
+            </children></VBox>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onUpdateButton" text="OK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+    <padding>
+        <Insets left="10.0" right="10.0" />
+    </padding>
+</VBox>
